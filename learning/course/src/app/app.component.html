@@ -1,0 +1,9 @@
+<div class="todo-container">
+  <app-todo
+    *ngFor="let todo of todoData"
+    [todoData]="todo"
+    (onClickIcon)="getTodoInfo($event)"
+  ></app-todo>
+</div>
+
+<button (click)="orderData()">Ordenar</button>
